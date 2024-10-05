@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Donate Bangladesh</title>
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./public/styles.css" />
+    <!-- FontAwesome Link -->
+    <script
+      src="https://kit.fontawesome.com/4789f143ea.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="font-primary">
+    <!-- Header Container -->
+    <main>
+      <!-- Navbar -->
+      <header id="sticky-header">
+        <section class="bg-amber-50">
+          <div class="container mx-auto py-6 grid grid-cols-12">
+            <!-- Blog Button -->
+            <div class="col-start-2 col-end-5">
+              <button
+                id="blog-btn"
+                class="btn bg-neon text-lg font-semibold text-gray-900 border-none px-8 py-3"
+              >
+                Blog
+              </button>
+            </div>
+            <!-- Logo -->
+            <div
+              class="col-start-5 col-end-9 flex justify-center items-center gap-2"
+            >
+              <img class="w-12 h-12" src="./public/img/logo.png" alt="Logo" />
+              <h2 class="text-lg font-semibold text-gray-900">
+                Donate Bangladesh
+              </h2>
+            </div>
+            <!-- Main Balance -->
+            <div
+              class="col-start-9 col-end-12 flex justify-end items-center gap-2"
+            >
+              <img class="w-7 h-7" src="./public/img/coin.png" alt="Coin" />
+              <p class="text-lg font-medium text-gray-900">
+                <!-- Balance -->
+                <span id="main-balance">5400</span> BDT
+              </p>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- Header End -->
+      <!-- FAQ Container -->
+    </main>
+    <!-- Footer -->
+    <footer class="bg-amber-50 py-20 mt-8"></footer>
     <!-- Custom JS -->
     <script src="./public/js/script.js"></script>
   </body>
