@@ -1,5 +1,4 @@
-// Custom Functions
-
+// custom functions
 function textValue(id) {
   const convertNumber = parseInt(document.getElementById(id).innerText);
   return convertNumber;
@@ -9,11 +8,12 @@ function inputValue(id) {
   const convertNumber = parseFloat(document.getElementById(id).value);
   return convertNumber;
 }
-// Get the sticky header element
+
+// sticky header variables
 const stickyHeader = document.getElementById("sticky-header");
 const stickyNav = document.getElementById("sticky-nav");
 
-// Add a scroll event listener
+// sticky header on scroll
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100) {
     stickyNav.classList.remove("bg-amber-50");
@@ -58,8 +58,8 @@ closeBtn.addEventListener("click", function () {
 });
 
 // close modal on window click
-window.addEventListener("click", function (e) {
-  if (e.target === modalContainer) {
+window.addEventListener("click", function (event) {
+  if (event.target === modalContainer) {
     modalContainer.classList.add("hidden");
   }
 });
@@ -106,6 +106,7 @@ donateNow1.addEventListener("click", function () {
       // Calculate donation and remaining balance
       const totalDonate = currentDonate + donateAmount;
       document.getElementById("current-donate-1").innerText = totalDonate;
+      // document.getElementById("current-donate-1").innerText = totalDonate;
 
       // clear input field after donation
       document.getElementById("donate-amount-1").value = "";
@@ -183,7 +184,7 @@ donateNow2.addEventListener("click", function () {
       // create div inside confirmation section
       const div = document.createElement("div");
       div.className =
-        "col-start-2 col-end-12 p-8 rounded-2xl border border-gray-200";
+        "col-start-2 col-end-12 p-4 lg:p-8 rounded-2xl border border-gray-200";
 
       div.innerHTML = `
      <h2 class="text-xl font-bold text-gray-900 mb-4">
