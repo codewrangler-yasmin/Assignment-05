@@ -17,10 +17,14 @@
     <main>
       <!-- Navbar -->
       <header id="sticky-header">
-        <section class="bg-amber-50">
-          <div class="container mx-auto py-6 grid grid-cols-12">
+        <section id="sticky-nav" class="bg-amber-50">
+          <div
+            class="container mx-auto py-6 grid grid-cols-12 gap-y-4 lg:gap-y-0"
+          >
             <!-- Blog Button -->
-            <div class="col-start-2 col-end-5">
+            <div
+              class="col-span-12 lg:col-start-2 lg:col-end-5 text-center lg:text-left"
+            >
               <button
                 id="blog-btn"
                 class="btn bg-neon text-lg font-semibold text-gray-900 border-none px-8 py-3"
@@ -31,7 +35,7 @@
             <!-- Logo -->
             <a
               href="./index.html"
-              class="col-start-5 col-end-9 flex justify-center items-center gap-2"
+              class="col-span-12 lg:col-start-5 lg:col-end-9 row-start-1 row-end-2 flex justify-center items-center gap-2"
             >
               <img class="w-12 h-12" src="./public/img/logo.png" alt="Logo" />
               <h2 class="text-lg font-semibold text-gray-900">
@@ -40,7 +44,7 @@
             </a>
             <!-- Main Balance -->
             <div
-              class="col-start-9 col-end-12 flex justify-end items-center gap-2"
+              class="col-span-12 lg:col-start-9 lg:col-end-12 flex justify-center lg:justify-end items-center gap-2"
             >
               <img class="w-7 h-7" src="./public/img/coin.png" alt="Coin" />
               <p class="text-lg font-medium text-gray-900">
@@ -66,13 +70,15 @@
           >
             <div class="border-b border-gray-300 cursor-pointer p-4">
               <h2
-                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+                class="text-lg font-semibold lg:text-2xl text-gray-900 flex justify-between items-center py-4"
               >
                 <span>What is the Document Object Model (DOM)?</span>
                 <span><i class="fa-solid fa-chevron-down"></i></span>
               </h2>
 
-              <p class="text-gray-600 text-lg font-light py-4 hidden">
+              <p
+                class="text-gray-600 text-md lg:text-lg font-light py-4 hidden"
+              >
                 The Document Object Model (DOM) is a programming interface
                 provided by web browsers that allows scripts (typically
                 JavaScript) to interact with and manipulate HTML and XML
@@ -83,14 +89,14 @@
             </div>
             <div class="border-b border-gray-300 cursor-pointer p-4">
               <h2
-                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+                class="text-lg font-semibold lg:text-2xl text-gray-900 flex justify-between items-center py-4"
               >
                 <span>How do you select an element from the DOM?</span>
                 <span><i class="fa-solid fa-chevron-down"></i></span>
               </h2>
 
               <span
-                class="text-gray-600 text-lg font-light py-4 hidden mb-4 block"
+                class="text-gray-600 text-md lg:text-lg font-light py-4 hidden mb-4 block"
               >
                 <p>
                   Selecting elements from the Document Object Model (DOM) is a
@@ -113,7 +119,7 @@
             </div>
             <div class="border-b border-gray-300 cursor-pointer p-4">
               <h2
-                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+                class="text-lg font-semibold lg:text-2xl text-gray-900 flex justify-between items-center py-4"
               >
                 <span
                   >What is event delegation in the context of the DOM, and why
@@ -122,7 +128,9 @@
                 <span><i class="fa-solid fa-chevron-down"></i></span>
               </h2>
 
-              <p class="text-gray-600 text-lg font-light py-4 hidden">
+              <p
+                class="text-gray-600 text-md lg:text-lg font-light py-4 hidden"
+              >
                 <span class="block mb-4"
                   >Event delegation is a technique in JavaScript that allows you
                   to handle events at a higher level in the DOM rather than
@@ -145,7 +153,7 @@
             </div>
             <div class="border-none p-4">
               <h2
-                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+                class="text-lg font-semibold lg:text-2xl text-gray-900 flex justify-between items-center py-4"
               >
                 <span
                   >How do you manipulate an element's attributes and styles
@@ -154,7 +162,9 @@
                 <span><i class="fa-solid fa-chevron-down"></i></span>
               </h2>
 
-              <div class="text-gray-600 text-lg font-light py-4 hidden">
+              <div
+                class="text-gray-600 text-md lg:text-lg font-light py-4 hidden"
+              >
                 <p>
                   Manipulating an element's attributes and styles using the
                   Document Object Model (DOM) is a fundamental aspect of web

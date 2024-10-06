@@ -120,7 +120,7 @@ donateNow1.addEventListener("click", function () {
       // create div inside confirmation section
       const div = document.createElement("div");
       div.className =
-        "col-start-2 col-end-12 p-8 rounded-2xl border border-gray-200";
+        "col-start-2 col-end-12 p-4 lg:p-8 rounded-2xl border border-gray-200";
       div.innerHTML = `
         <h2 class="text-xl font-bold text-gray-900 mb-4">
                 ${donateAmount} Taka is Donated for ${donationName}, Bangladesh

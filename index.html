@@ -18,9 +18,13 @@
       <!-- Navbar -->
       <header id="sticky-header" class="sticky top-0 backdrop-blur-2xl">
         <section id="sticky-nav" class="bg-amber-50">
-          <div class="container mx-auto py-6 grid grid-cols-12">
+          <div
+            class="container mx-auto py-6 grid grid-cols-12 gap-y-4 lg:gap-y-0"
+          >
             <!-- Blog Button -->
-            <div class="col-start-2 col-end-5">
+            <div
+              class="col-span-12 lg:col-start-2 lg:col-end-5 text-center lg:text-left"
+            >
               <button
                 id="blog-btn"
                 class="btn bg-neon text-lg font-semibold text-gray-900 border-none px-8 py-3"
@@ -31,7 +35,7 @@
             <!-- Logo -->
             <a
               href="./index.html"
-              class="col-start-5 col-end-9 flex justify-center items-center gap-2"
+              class="col-span-12 lg:col-start-5 lg:col-end-9 row-start-1 row-end-2 flex justify-center items-center gap-2"
             >
               <img class="w-12 h-12" src="./public/img/logo.png" alt="Logo" />
               <h2 class="text-lg font-semibold text-gray-900">
@@ -40,7 +44,7 @@
             </a>
             <!-- Main Balance -->
             <div
-              class="col-start-9 col-end-12 flex justify-end items-center gap-2"
+              class="col-span-12 lg:col-start-9 lg:col-end-12 flex justify-center lg:justify-end items-center gap-2"
             >
               <img class="w-7 h-7" src="./public/img/coin.png" alt="Coin" />
               <p class="text-lg font-medium text-gray-900">
@@ -52,7 +56,7 @@
         </section>
         <!-- Button Container -->
         <section
-          class="container mx-auto pt-10 pb-8 flex justify-center items-center gap-2"
+          class="container mx-auto p-5 lg:pt-10 lg:pb-8 flex justify-center items-center gap-2"
         >
           <!-- Buttons -->
           <!-- Donation button -->
@@ -79,10 +83,10 @@
       >
         <!-- Single Card Item 1 -->
         <div
-          class="col-start-2 col-end-12 grid grid-cols-12 gap-x-8 p-8 rounded-2xl border border-gray-200"
+          class="col-span-12 lg:col-start-2 lg:col-end-12 grid grid-cols-12 gap-y-8 lg:gap-x-8 p-8 rounded-2xl border border-gray-200"
         >
           <!-- Image container -->
-          <div class="col-span-6">
+          <div class="col-span-12 lg:col-span-6">
             <img
               class="w-full"
               src="./public/img/noakhali.png"
@@ -91,7 +95,7 @@
           </div>
           <!-- Content and Input Container -->
           <div
-            class="col-span-6 flex flex-col justify-center items-start gap-y-4"
+            class="col-span-12 lg:col-span-6 flex flex-col justify-center items-start gap-y-4"
           >
             <!-- Donate Amount Box -->
             <div
@@ -137,15 +141,15 @@
         </div>
         <!-- Single Card Item 2 -->
         <div
-          class="col-start-2 col-end-12 grid grid-cols-12 gap-x-8 p-8 rounded-2xl border border-gray-200"
+          class="col-span-12 lg:col-start-2 lg:col-end-12 grid grid-cols-12 gap-y-8 lg:gap-x-8 p-8 rounded-2xl border border-gray-200"
         >
           <!-- Image container -->
-          <div class="col-span-6">
+          <div class="col-span-12 lg:col-span-6">
             <img class="w-full" src="./public/img/feni.png" alt="Noakhali" />
           </div>
           <!-- Content and Input Container -->
           <div
-            class="col-span-6 flex flex-col justify-center items-start gap-y-4"
+            class="col-span-12 lg:col-span-6 flex flex-col justify-center items-start gap-y-4"
           >
             <!-- Donate Amount Box -->
             <div
@@ -192,10 +196,10 @@
         </div>
         <!-- Single Card Item 3 -->
         <div
-          class="col-start-2 col-end-12 grid grid-cols-12 gap-x-8 p-8 rounded-2xl border border-gray-200"
+          class="col-span-12 lg:col-start-2 lg:col-end-12 grid grid-cols-12 gap-y-8 lg:gap-x-8 p-8 rounded-2xl border border-gray-200"
         >
           <!-- Image container -->
-          <div class="col-span-6">
+          <div class="col-span-12 lg:col-span-6">
             <img
               class="w-full"
               src="./public/img/quota-protest.png"
@@ -204,7 +208,7 @@
           </div>
           <!-- Content and Input Container -->
           <div
-            class="col-span-6 flex flex-col justify-center items-start gap-y-4"
+            class="col-span-12 lg:col-span-6 flex flex-col justify-center items-start gap-y-4"
           >
             <!-- Donate Amount Box -->
             <div
@@ -281,16 +285,22 @@
         <!-- Modal Inner Div -->
         <div
           id="modal"
-          class="flex flex-col justify-center items-center bg-white w-1/3 rounded-2xl shadow-lg p-8 pb-10 mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="flex flex-col justify-center items-center bg-white w-3/4 lg:w-1/3 rounded-2xl shadow-lg p-8 pb-10 mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <!-- Modal Title -->
-          <h2 class="text-5xl font-bold text-gray-900 mb-6 text-center">
+          <h2
+            class="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 text-center"
+          >
             Congrates!
           </h2>
           <!-- Coin Image -->
-          <img class="w-14 h-14 mb-7" src="./public/img/coin.png" alt="Coin" />
+          <img
+            class="w-8 h-8 lg:w-14 lg:h-14 mb-7"
+            src="./public/img/coin.png"
+            alt="Coin"
+          />
           <!-- Confirmation Message -->
-          <p class="text-gray-600 font-light text-2xl">
+          <p class="text-gray-600 font-light text-lg lg:text-2xl text-center">
             You Have Donated for Humankind
             <span
               class="block text-gray-900 my-6 text-2xl font-bold text-center"
