@@ -29,14 +29,15 @@
               </button>
             </div>
             <!-- Logo -->
-            <div
+            <a
+              href="./index.html"
               class="col-start-5 col-end-9 flex justify-center items-center gap-2"
             >
               <img class="w-12 h-12" src="./public/img/logo.png" alt="Logo" />
               <h2 class="text-lg font-semibold text-gray-900">
                 Donate Bangladesh
               </h2>
-            </div>
+            </a>
             <!-- Main Balance -->
             <div
               class="col-start-9 col-end-12 flex justify-end items-center gap-2"
@@ -44,7 +45,7 @@
               <img class="w-7 h-7" src="./public/img/coin.png" alt="Coin" />
               <p class="text-lg font-medium text-gray-900">
                 <!-- Balance -->
-                <span id="main-balance">5400</span> BDT
+                <span id="main-balance">100000</span> BDT
               </p>
             </div>
           </div>
@@ -52,10 +53,157 @@
       </header>
       <!-- Header End -->
       <!-- FAQ Container -->
+      <section class="container mx-auto">
+        <div class="grid grid-cols-12 grid-row-3 mt-8">
+          <div class="col-start-2 col-end-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">
+              Important FAQ
+              <i class="fa-regular fa-comment"></i>
+            </h2>
+          </div>
+          <div
+            class="accordion col-start-2 col-end-12 row-span-1 border border-gray-200 rounded-lg"
+          >
+            <div class="border-b border-gray-300 cursor-pointer p-4">
+              <h2
+                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+              >
+                <span>What is the Document Object Model (DOM)?</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </h2>
+
+              <p class="text-gray-600 text-lg font-light py-4 hidden">
+                The Document Object Model (DOM) is a programming interface
+                provided by web browsers that allows scripts (typically
+                JavaScript) to interact with and manipulate HTML and XML
+                documents. It represents the document as a tree structure, where
+                each node in the tree corresponds to a part of the document,
+                such as elements, attributes, text, and comments.
+              </p>
+            </div>
+            <div class="border-b border-gray-300 cursor-pointer p-4">
+              <h2
+                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+              >
+                <span>How do you select an element from the DOM?</span>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </h2>
+
+              <span
+                class="text-gray-600 text-lg font-light py-4 hidden mb-4 block"
+              >
+                <p>
+                  Selecting elements from the Document Object Model (DOM) is a
+                  fundamental aspect of working with JavaScript in web
+                  development. Below are several common methods to select
+                  elements from the DOM:
+                </p>
+                <ul class="list-disc m-4">
+                  <li>document.getElementById()</li>
+                  <li>document.getElementsByClassName()</li>
+                  <li>document.getElementsByTagName()</li>
+                  <li>document.querySelector()</li>
+                  <li>document.querySelectorAll()</li>
+                </ul>
+                <p>
+                  These methods provide flexible options for selecting and
+                  manipulating elements in the DOM based on your needs.
+                </p>
+              </span>
+            </div>
+            <div class="border-b border-gray-300 cursor-pointer p-4">
+              <h2
+                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+              >
+                <span
+                  >What is event delegation in the context of the DOM, and why
+                  is it useful?</span
+                >
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </h2>
+
+              <p class="text-gray-600 text-lg font-light py-4 hidden">
+                <span class="block mb-4"
+                  >Event delegation is a technique in JavaScript that allows you
+                  to handle events at a higher level in the DOM rather than
+                  directly on the individual elements. Instead of attaching
+                  event listeners to each element (like buttons or list items),
+                  you attach a single event listener to a parent element. This
+                  parent element listens for events that bubble up from its
+                  child elements.</span
+                >
+
+                <span class="block mb-4"
+                  >When an event occurs on a child element, the event bubbles up
+                  to its parent elements in the DOM hierarchy. The parent
+                  element can then detect the event and decide what to do based
+                  on the target of the event. This is done using the
+                  event.target property, which tells you which element actually
+                  triggered the event.</span
+                >
+              </p>
+            </div>
+            <div class="border-none p-4">
+              <h2
+                class="text-2xl text-gray-900 flex justify-between items-center py-4"
+              >
+                <span
+                  >How do you manipulate an element's attributes and styles
+                  using the DOM?</span
+                >
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </h2>
+
+              <div class="text-gray-600 text-lg font-light py-4 hidden">
+                <p>
+                  Manipulating an element's attributes and styles using the
+                  Document Object Model (DOM) is a fundamental aspect of web
+                  development with JavaScript. Here’s how you can do both:
+                </p>
+                <h3 class="font-medium text-xl">1. Manipulating Attributes</h3>
+                <p>
+                  You can use the following methods to manipulate an element's
+                  attributes:
+                </p>
+                <ul class="list-disc m-4">
+                  <li>
+                    getAttribute(attributeName): Retrieves the value of a
+                    specified attribute.
+                  </li>
+                  <li>
+                    setAttribute(attributeName, value): Sets the value of a
+                    specified attribute.
+                  </li>
+                  <li>
+                    removeAttribute(attributeName): Removes a specified
+                    attribute.
+                  </li>
+                </ul>
+                <h3 class="font-medium text-xl">2. Manipulating Styles</h3>
+                <p>
+                  You can manipulate an element's styles using the style
+                  property, which allows you to access and modify inline styles
+                  directly.
+                </p>
+                <ul class="list-disc m-4">
+                  <li>
+                    element.style.property: Sets the value of a specific CSS
+                    property.
+                  </li>
+                  <li>
+                    element.style.cssText: Sets multiple CSS properties at once.
+                  </li>
+                  <li>
+                    element.classList: Adds, removes, or toggles CSS classes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- Footer -->
-    <footer class="bg-amber-50 py-20 mt-8"></footer>
     <!-- Custom JS -->
-    <script src="./public/js/script.js"></script>
+    <script src="./public/js/blog.js"></script>
   </body>
 </html>
