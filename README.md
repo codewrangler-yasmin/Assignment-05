@@ -1,6 +1,6 @@
-<h1>Project Name: <span style="font-weight: 400">Peddy - Pet Adoption Platform</span></h1>
+<h1>Peddy - Pet Adoption Platform<</h1>
 
-<h2>Project Description:</h2>
+<h2>Description:</h2>
 <p>Peddy is an intuitive and visually engaging web platform designed to connect potential pet adopters with animals in need of a loving home. The site allows users to browse a variety of pets available for adoption, filter by categories, and learn about the joys of giving animals a forever home. Featuring a mobile-responsive layout, Peddy makes it easy for users to explore adoption options, learn more about each pet, and engage with the adoption process anytime, anywhere.</p>
 
 <h2>Features:</h2>
@@ -21,10 +21,27 @@
 
 <h4>The provided code makes use of several ES6 (ECMAScript 2015) features. Here are the key ones:</h4>
 
-<p style="font-weight: 700">Arrow Functions:</p>
-<p>he code utilizes arrow functions for cleaner and more concise function definitions.</p>
-<code>const sortByPriceDescending = (pets) => {
-  return pets.sort((a, b) => b.price - a.price);
-};
-const closeModal = () => { ... };
-</code>
+
+<h2>ES6 (ECMAScript 2015) Features:</h2>
+<h3>Arrow Functions:</h3>
+<p>The code utilizes arrow functions for cleaner and more concise function definitions.</p>
+
+<h3>Template Literals:</h3>
+<p>Template literals (`) are used extensively to insert variables directly into strings, making string concatenation simpler and more readable.</p>
+
+<h3><code>const and let:</code></h3>
+<p>Block-scoped variable declarations with const and let are used throughout the code instead of var to define variables with appropriate scoping.</p>
+
+<h3>async/await for Asynchronous Code:</h3>
+<p>The code uses async/await for handling asynchronous operations, making it easier to work with promises in a more readable and synchronous-like manner.</p>
+
+<h3>Object Destructuring:</h3>
+<p>Destructuring is used to extract properties from objects cleanly and concisely.</p>
+
+
+
+
+
+
+
+
