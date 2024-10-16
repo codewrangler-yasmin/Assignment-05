@@ -29,11 +29,11 @@
 <h3>Template Literals:</h3>
 <p>Template literals (`) are used extensively to insert variables directly into strings, making string concatenation simpler and more readable.</p>
 
-<h3><code>const and let:</code></h3>
-<p>Block-scoped variable declarations with const and let are used throughout the code instead of var to define variables with appropriate scoping.</p>
+<h3><code>const</code> and <code>let</code> :</h3>
+<p>Block-scoped variable declarations with <code>const</code> and <code>let</code> are used throughout the code instead of var to define variables with appropriate scoping.</p>
 
-<h3>async/await for Asynchronous Code:</h3>
-<p>The code uses async/await for handling asynchronous operations, making it easier to work with promises in a more readable and synchronous-like manner.</p>
+<h3><code>async/await</code> for Asynchronous Code:</h3>
+<p>The code uses <code>async/await</code> for handling asynchronous operations, making it easier to work with promises in a more readable and synchronous-like manner.</p>
 
 <h3>Object Destructuring:</h3>
 <p>Destructuring is used to extract properties from objects cleanly and concisely.</p>
